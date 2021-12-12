@@ -91,6 +91,10 @@ img {
   display: flex;
   align-items: center;
 }
+.item-contacts{
+  display: flex;
+  align-items: center;
+}
 .link:hover .icon,
 .linnk:focus .icon {
   fill: var(--accent-color);
@@ -102,7 +106,6 @@ img {
 .item:not(:last-child) {
   margin-right: 50px;
 }
-
 .navbox {
   display: flex;
 }
@@ -121,6 +124,7 @@ img {
   display: flex;
   margin-left: auto;
 }
+
 /* ==========Body styling========== */
 body {
   font-family: Roboto, sans-serif;
@@ -129,7 +133,6 @@ body {
   letter-spacing: 0.03em;
   background: var(--bg-color);
 }
-
 .hero-section {
   max-width: 1600px;
   height: 600px;
@@ -143,7 +146,6 @@ body {
     ),
     url(../img/imghero.jpg);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
   text-align: center;
   margin: 0px auto;
   padding: 200px 0 200px 0;
@@ -231,7 +233,6 @@ body {
   text-align: center;
   color: var(--text-secondary);
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -335,7 +336,6 @@ body {
 .team-social-link:focus{
   background-color: var(--accent-color);
 }
-
  .team-social-link svg {
   width: 20px;
   height: 20px;
@@ -377,7 +377,6 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   drop shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  fill: #FFFFFF;
 }
 .contacts-social-link svg {
   width: 20px;
@@ -529,7 +528,6 @@ footer {
 .footer-social{
   margin-top: 12px;
   margin-left: 70px;
-
 }
 .footer-social-title{
   margin-button: 20px;
