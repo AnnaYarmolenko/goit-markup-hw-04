@@ -315,6 +315,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: var(--svg-color);
 }
 .team-social-link:first-child{
   margin-left: 0px;
@@ -327,15 +328,13 @@ body {
   height: 44px;
   border-radius: 50%; 
 }
- .team-social-link svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--svg-color);
-}
-.icon-team:hover ,
+.icon-team:hover,
 .icon-team:focus{
   background-color: var(--accent-color);
-  fill: var(--bg-color);
+}
+.icon-team:hover svg,
+.icon-team:focus svg{
+ fill: var(--bg-color);
 }
 .clients {
   font-weight: bold;
@@ -355,6 +354,9 @@ body {
 }
 .link-client{
    fill: var(--svg-color);
+}
+.clients-icon:hover{
+ border: 1px solid var(--accent-color);
 }
 .clients-icon:hover .link-client,
 .clients-icon:focus .link-client{
@@ -507,16 +509,16 @@ footer {
 }
 .footer{
   display: flex;
+  align-items: baseline;
 }
 .icon-team:last-child{
  margin-right: 0px;
 }
 .footer-social{
-  margin-top: 12px;
   margin-left: 70px;
 }
 .footer-social-title{
-  margin-button: 20px;
+  margin-bottom: 20px;
   color:var(--bg-color);
 }
 .contacts-social-link:hover,
