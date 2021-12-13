@@ -61,10 +61,14 @@ img {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--text-primery);
+  color: var(--text-secondary);
 }
 .link.current {
   color: var(--accent-color);
+}
+.icon{
+  fill: var(--text-secondary);
+  margin-right: 10px;
 }
 .link:hover,
 .link:focus {
@@ -76,9 +80,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-secondary);
 }
-.linkbox {
-  display: flex;
-}
 .linkbox .link {
   margin-right: 30px;
 }
@@ -87,11 +88,7 @@ img {
   color: var(--accent-color);
   cursor: pointer;
 }
-.linkbox{
-  display: flex;
-  align-items: center;
-}
-.item-contacts{
+.contactshed{
   display: flex;
   align-items: center;
 }
@@ -328,13 +325,18 @@ body {
 .team-social-link:first-child{
   margin-left: 0px;
 }
-.link-svg:hover,
+/* .link-svg:hover,
 .link-svg:focus {
   fill: var(--bg-color);
 }
 .team-social-link:hover,
 .team-social-link:focus{
   background-color: var(--accent-color);
+} */
+.team-social-link:hover .link-svg,
+.team-social-link:focus .link-svg{
+  background-color: var(--accent-color);
+  fill: var(--bg-color);
 }
  .team-social-link svg {
   width: 20px;
