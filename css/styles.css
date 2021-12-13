@@ -70,9 +70,9 @@ img {
   fill: var(--text-secondary);
   margin-right: 10px;
 }
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+.contactshed:hover .icon,
+.contactshed:focus .icon {
+  fill: var(--accent-color);
 }
 .contactshed {
   font-weight: 500;
@@ -91,11 +91,6 @@ img {
 .contactshed{
   display: flex;
   align-items: center;
-}
-.link:hover .icon,
-.linnk:focus .icon {
-  fill: var(--accent-color);
-  cursor: pointer;
 }
 .site-nav-link {
   display: flex;
@@ -313,35 +308,34 @@ body {
 .team-social-link:first-child {
   margin-left: 32px;
 }
-.team-social-link {
+.icon-team {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--bg-color);
 }
 .team-social-link:first-child{
   margin-left: 0px;
 }
-/* .link-svg:hover,
-.link-svg:focus {
-  fill: var(--bg-color);
-}
-.team-social-link:hover,
-.team-social-link:focus{
-  background-color: var(--accent-color);
-} */
-.team-social-link:hover .link-svg,
-.team-social-link:focus .link-svg{
-  background-color: var(--accent-color);
-  fill: var(--bg-color);
+.team-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; 
 }
  .team-social-link svg {
   width: 20px;
   height: 20px;
   fill: var(--svg-color);
+}
+.icon-team:hover ,
+.icon-team:focus{
+  background-color: var(--accent-color);
+  fill: var(--bg-color);
 }
 .clients {
   font-weight: bold;
@@ -350,7 +344,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-.li-clients {
+.clients-icon{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,15 +352,12 @@ body {
   height: 92px;
   border: 1px solid var(--svg-color);
   border-radius: 4px;
-  fill: var(--svg-color);
 }
-.li-clients:hover,
-.li-clients:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+.link-client{
+   fill: var(--svg-color);
 }
-.link-client:hover,
-.link-client:focus {
+.clients-icon:hover .link-client,
+.clients-icon:focus .link-client{
   fill: var(--accent-color);
   cursor: pointer;
 }
@@ -384,10 +375,6 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--bg-color);
-}
-.contacts-social-link:hover,
-.contacts-social-link:focus{
-  background-color: var(--accent-color);
 }
 
 
@@ -428,7 +415,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.button {
+button {
   padding: 6px 22px;
 }
 .li-buttons {
@@ -497,15 +484,12 @@ footer {
   line-height: 1.2;
   color: var(--bg-color);
 }
+
 .contactsfoot {
   font-style: normal;
   font-weight: normal;
   line-height: 1.7;
   color: var(--text-secondary-light);
-}
-.contactsfoot:hover,
-.contactsfoot:focus {
-  color: var(--bg-color);
 }
 .footer-section {
   padding-top: 60px;
@@ -534,4 +518,8 @@ footer {
 .footer-social-title{
   margin-button: 20px;
   color:var(--bg-color);
+}
+.contacts-social-link:hover,
+.contacts-social-link:focus{
+  background-color: var(--accent-color);
 }
